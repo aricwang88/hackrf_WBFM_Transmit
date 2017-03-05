@@ -13,6 +13,7 @@ Now we got HACKRF_WBFM_Transmit.
 chmod +x HACKRF_WBFM_Transmit
 
 ./HACKRF_WBFM_Transmit
+
 Usage:./HACKRF_WBFM_Transmit <WAV File Abs Path>
 
 # Verification
