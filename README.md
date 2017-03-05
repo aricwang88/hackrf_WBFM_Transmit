@@ -19,6 +19,7 @@ Usage:./HACKRF_WBFM_Transmit <WAV File Abs Path>
 I also upload the test wave file.
 
 ./HACKRF_WBFM_Transmit MM_didu.wav
+
 HACKRF WBFM Transmit demo ...
 Begin to init hackrf ...
 hackrf_init sucessfully!
@@ -49,7 +50,6 @@ Number of samples:8090145
 Size of each sample:4 bytes
 Approx.Duration in seconds=183.450211
 Approx.Duration in h:m:s=0:3:3.450
-
 
 .Valid range for data values : -32768 to 32767 
 Alloc memory resample done.
