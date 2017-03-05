@@ -21,7 +21,6 @@ I also upload the test wave file.
 ./HACKRF_WBFM_Transmit MM_didu.wav
 
 HACKRF WBFM Transmit demo ...
-
 Begin to init hackrf ...
 hackrf_init sucessfully!
 hackrf_open() success.
