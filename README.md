@@ -1,6 +1,5 @@
 # hackrf_WBFM_Transmit
 This is simple WBFM Transmit code that used to verify your environment correctly installed.
-
 # Describtion
 This is a mini code, in a single C file and work only one thread. It can parse wav file and generate IQ data for hackrf one, then send data to hackrf one.
 The default frequency is 100.4MHz.
@@ -21,7 +20,7 @@ apt-get install libav-tools
 
 avconv -i mm_didu.mp3  -acodec pcm_s16le  -ac 2 -ar 44100 -vol 200  out.wav
 
-M_didu.wav
+mv out.wav M_didu.wav
 
 ```
 
@@ -103,58 +102,4 @@ Approx.Duration in seconds=183.450211
 
 Approx.Duration in h:m:s=0:3:3.450
 
-.Valid range for data values : -32768 to 32767 
-
-Alloc memory resample done.
-
-Alloc memory IQ data done.
-
-Alloc memory TX data done.
-
-Begin to process data ...(Please wait about 20 seconds.)
-
-Processing: 0.00%
-
-Processing: 5.45%
-
-Processing: 10.90%
-
-Processing: 16.35%
-
-Processing: 21.80%
-
-Processing: 27.26%
-
-Processing: 32.71%
-
-Processing: 38.16%
-
-Processing: 43.61%
-
-Processing: 49.06%
-
-Processing: 54.51%
-
-Processing: 59.96%
-
-Processing: 65.41%
-
-Processing: 70.86%
-
-Processing: 76.32%
-
-Processing: 81.77%
-
-Processing: 87.22%
-
-Processing: 92.67%
-
-Processing: 98.12%
-
-IQ data transcode done.
-
-Release intermedia memory.
-
-Data process done, transmiting ...
-```
-Ctrl+C to stop transmiting.
+.Valid range for data 
