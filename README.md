@@ -6,19 +6,21 @@ This is a mini code, in a single C file and work only one thread. It can parse w
 The default frequency is 100.4MHz.
 
 # Compliation
+```
 gcc -o HACKRF_WBFM_Transmit HackRF_WBFM_Transmit.c -lm -lhackrf
-
+```
 Now we got HACKRF_WBFM_Transmit.
-
+```
 chmod +x HACKRF_WBFM_Transmit
 
 ./HACKRF_WBFM_Transmit
 
 Usage:./HACKRF_WBFM_Transmit <WAV File Abs Path>
+```
 
 # Verification
 I also upload the test wave file.
-
+```
 ./HACKRF_WBFM_Transmit MM_didu.wav
 
 HACKRF WBFM Transmit demo ...
@@ -134,5 +136,5 @@ IQ data transcode done.
 Release intermedia memory.
 
 Data process done, transmiting ...
-
+```
 Ctrl+C to stop transmiting.
