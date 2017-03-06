@@ -20,7 +20,7 @@ apt-get install libav-tools
 
 avconv -i mm_didu.mp3  -acodec pcm_s16le  -ac 2 -ar 44100 -vol 200  out.wav
 
-mv out.wav M_didu.wav
+mv out.wav MM_didu.wav
 
 ```
 
