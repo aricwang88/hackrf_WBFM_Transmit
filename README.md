@@ -4,6 +4,24 @@ This is simple WBFM Transmit code that used to verify your environment correctly
 # Describtion
 This is a mini code, in a single C file and work only one thread. It can parse wav file and generate IQ data for hackrf one, then send data to hackrf one.
 The default frequency is 100.4MHz.
+#Prepare media source
+-Option 1: Download or clone the test wave file from github.
+```
+git clone https://github.com/aricwang88/hackrf_example_res.git
+```
+-Option 2: Install ffmpeg or libav-tools to convert to wave file.
+Search in repository:
+```
+#apt-cache search libav-tools
+libav-tools - Multimedia player, server, encoder and transcoder
+
+#apt-get install libav-tools
+
+#avconv -i mm_didu.mp3  -acodec pcm_s16le  -ac 2 -ar 44100 -vol 200  out.wav
+
+#mv out.wav MM_didu.wav
+
+```
 
 # Compliation
 ```

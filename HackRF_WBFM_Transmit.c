@@ -172,9 +172,9 @@ void tx_hackrf(char* wav_file)
 	float duration_in_seconds = (float) header.overall_size / header.byterate;
 	printf("Approx.Duration in seconds=%f\n", duration_in_seconds);
 	printf("Approx.Duration in h:m:s=%s\n", seconds_to_time(duration_in_seconds));
-	if(num_samples < header.sample_rate)
+	//if(num_samples < header.sample_rate)
 	{
-		num_samples = duration_in_seconds*header.sample_rate;
+		num_samples = (duration_in_seconds+1)*header.sample_rate;
 		header.data_size = num_samples * header.bits_per_sample/8;
         }
 
