@@ -18,15 +18,20 @@ libav-tools - Multimedia player, server, encoder and transcoder
 
 apt-get install libav-tools
 
-avconv -i mm_didu.mp3  -acodec pcm_s16le  -ac 2 -ar 44100 -vol 200  out.wav
-
-mv out.wav MM_didu.wav
+avconv -i mm_didu.mp3  -acodec pcm_s16le  -ac 2 -ar 44100 -vol 200  MM_didu.wav
 
 ```
 
 # Compliation
 ```
 gcc -o HACKRF_WBFM_Transmit HackRF_WBFM_Transmit.c -lm -lhackrf
+
+or
+
+make
+
+make wav
+
 ```
 Now we got HACKRF_WBFM_Transmit.
 ```
@@ -38,7 +43,8 @@ Usage:./HACKRF_WBFM_Transmit <WAV File Abs Path>
 ```
 
 # Verification
-I also upload the test wave file.
+I also upload the test wave file, please clone from other repository or convert from mp3 by ffmpeg.
+
 ```
 ./HACKRF_WBFM_Transmit MM_didu.wav
 
